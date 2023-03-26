@@ -106,7 +106,7 @@ class Contact
 	const FOLLOWER = 1; // The contact is following this user (the contact is the subscriber)
 	const SHARING  = 2; // The contact shares their content with this user (the user is the subscriber)
 	const FRIEND   = 3; // There is a mutual relationship between the contact and the user
-	const SELF     = 4; // This is the user theirself
+	const SELF     = 4; // This is the user themselves
 	/**
 	 * @}
 	 */
