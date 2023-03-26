@@ -153,9 +153,9 @@ class Update extends BaseApi
 					continue;
 				}
 
-				Photo::setPermissionForRessource($media[0]['resource-id'], $uid, $item['allow_cid'], $item['allow_gid'], $item['deny_cid'], $item['deny_gid']);
+				Photo::setPermissionForResource($media[0]['resource-id'], $uid, $item['allow_cid'], $item['allow_gid'], $item['deny_cid'], $item['deny_gid']);
 
-				$ressources[] = $media[0]['resource-id'];
+				$resources[] = $media[0]['resource-id'];
 				$phototypes   = Images::supportedTypes();
 				$ext          = $phototypes[$media[0]['type']];
 
