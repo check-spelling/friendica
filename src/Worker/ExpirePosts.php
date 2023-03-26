@@ -52,7 +52,7 @@ class ExpirePosts
 			self::addMissingEntries();
 		}
 
-		// Set the expiry for origin posta
+		// Set the expiry for origin post
 		Worker::add(Worker::PRIORITY_LOW, 'Expire');
 
 		// update nodeinfo data after everything is cleaned up
